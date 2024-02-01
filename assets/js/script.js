@@ -33,7 +33,6 @@ restart.addEventListener("click", () => {
 });
 
 function showResult() {
-    console.log('result')
     //user score
     userScore.innerHTML = "Your score is " + scoreCount + " out of " + questionCount;
     if (scoreCount === 0 && scoreCount <= 2) {
@@ -78,9 +77,7 @@ const timerDisplay = () => {
         timeLeft.innerHTML = `${count}s`;
         if (count == 0) {
             //when countdown reaches 0 clearInterval and go to next question
-
             clearInterval(countdown)
-            console.log('time-up')
             displayNext();
         }
     }, 1000);
@@ -99,7 +96,6 @@ const quizDisplay = (questionCount) => {
 };
 
 function showQuestion() {
-    console.log('showQuestion')
     //Generate quiz
     for (let i of questionsArray) {
         //Randomly sort answer options
@@ -122,14 +118,12 @@ function showQuestion() {
        <button class="option-div" onclick=" checkAnswer(this)">${i.options[3]}</button>
     `;
         quizContainer.appendChild(div);
-        console.log('selectAnswer')
     }
 }
 
 
 //Check answer function to check if user selected answer option is correct or incorrect.
 function checkAnswer(userAnswer) {
-    console.log('checkAnswer')
     let userSelectedAnswer = userAnswer.innerText;
     let question =
         document.getElementsByClassName("quiz-container-mid")[questionCount];
@@ -140,7 +134,6 @@ function checkAnswer(userAnswer) {
         userAnswer.classList.add("correct");
         //Add tick icon to correct selected option
         userAnswer.insertAdjacentHTML("beforeend", tickIcon);
-        console.log("Correct Answer");
         scoreCount++;
     } else {
         //Add red color to incorrect selected option
@@ -150,7 +143,7 @@ function checkAnswer(userAnswer) {
         options.forEach((element) => {
             if (element.innerText == questionsArray[questionCount].correct) {
                 element.classList.add("correct");
-                console.log("Incorrect Answer");
+
 
             }
         });
@@ -166,7 +159,6 @@ function checkAnswer(userAnswer) {
 }
 //initial setup
 function startGame() {
-    console.log('startGame')
     quizContainer.innerHTML = "";
     // Randomly sort questions
     questionsArray.sort(() => Math.random() - 0.5);
@@ -186,7 +178,6 @@ playBtn.onclick = () => {
     //Hides start screen.
     startScreen.classList.add("hide");
     displayContainer.classList.remove("hide");
-    console.log('play')
     startGame();
 }
 
@@ -194,11 +185,10 @@ playBtn.onclick = () => {
 exitBtn.onclick = () => {
     //Wll hide rules.
     infoBox.classList.remove("active");
-    console.log('exit')
+
 }
 //Start Button on click brings up quiz playing information.
 startButton.onclick = () => {
-    console.log('running')
     //Shows information  box
     infoBox.classList.add("active");
 }
