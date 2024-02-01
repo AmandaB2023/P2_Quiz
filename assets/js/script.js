@@ -36,16 +36,14 @@ function showResult() {
     console.log('result')
     //user score
     userScore.innerHTML = "Your score is " + scoreCount + " out of " + questionCount;
-    if (scoreCount === 1 && scoreCount <= 2) {
+    if (scoreCount === 0 && scoreCount <= 2) {
         userScore.innerHTML += "<p>Oh No !! Try Again</p>";
     } else if (scoreCount === 3 && scoreCount <= 5) {
         userScore.innerHTML += "<p>I think you need practice!!</p>";
     } else if (scoreCount === 6 && scoreCount <= 8) {
-        userScore.innerHTML += "<p>No Bad</p>";
+        userScore.innerHTML += "<p>Not Bad</p>";
     } else if (scoreCount === 9 && scoreCount <= 10) {
-        userScore.innerHTML += "<p>Excellent !! You re a irish as The Late Late Show</p>";
-    } else {
-        userScore.innerHTML += "<p>Oh no </p>";
+        userScore.innerHTML += "<p>Excellent !! You are as irish as The Late Late Show</p>";
     }
 }
 //Next Button
