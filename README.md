@@ -196,7 +196,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 *   From the source section drop-down menu, select the Main Branch, then click "Save".
 *   The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here: ![Link]
+The live link can be found here: ![Github](https://amandab2023.github.io/P2_Quiz/)
 
 #### Local Deployment
 In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository.
@@ -247,12 +247,12 @@ Tools
 
 *   Code Institute tutors and Slack community members for their support and help.
 
-*   CodeVal on youTube ![Link](https://www.youtube.com/watch?v=PNRsd2CD4S8)
+*   CodeVal on youTube (https://www.youtube.com/watch?v=PNRsd2CD4S8)
 
-*   Web Dev Simplified on youtube ![Link](https://www.youtube.com/watch?v=riDzcEQbX6k)
+*   Web Dev Simplified on youtube(https://www.youtube.com/watch?v=riDzcEQbX6k)
 
-*   CodeHal on youTube ![Link](https://www.youtube.com/watch?v=Vp8x8-reqZA&t=4761s)
+*   CodeHal on youtube(https://www.youtube.com/watch?v=Vp8x8-reqZA&t=4761s)
 
-*   W3Schools ![Link](https://www.w3schools.com/js/js_examples.asp)
+*   W3Schools (https://www.w3schools.com/js/js_examples.asp)
 
 
