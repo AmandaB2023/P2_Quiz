@@ -16,3 +16,315 @@ body {
     flex-direction: column;
     background: linear-gradient(185deg, #049E00, #8CFF20);
 }
+
+/*Main*/
+main {
+    /* Enlarged main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 40px;
+    /* Enables flex properties for child elements */
+    display: flex;
+}
+
+/*Header logo size*/
+.logo {
+    width: 75%;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Start Screen*/
+.start-screen,
+.score-container {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Start Button*/
+#start-button {
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #049E00;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+}
+
+/*Restart Button*/
+#restart {
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #049E00;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#start-button:hover,
+#restart:hover {
+    background-color: #2ade24;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.info-box {
+    position: absolute;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    padding: 10px 25px;
+    width: 75%;
+    max-width: 37.5em;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.info-box.active {
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.info-box .info-title {
+    font-size: 50px;
+    color: #049E00;
+}
+
+.info-box .info {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 4px 0;
+}
+
+.info-box .info>span {
+    font-weight: 600;
+    color: #049E00;
+}
+
+.info-box .info-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #049E00;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.info-box .info-buttons .info-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 45px;
+    background: #049E00;
+    border: 2px solid #f1f8f1;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/*Information Box Buttons*/
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2px;
+}
+
+
+.info-box .info-buttons .info-btn:hover {
+    background-color: #2ade24;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+#display-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: .5em 2em;
+    margin-top: 2em;
+    width: 75%;
+    height: auto;
+    max-width: 30em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    border: 1px solid #FFE00D;
+
+}
+
+.question {
+    margin-bottom: 1em;
+    margin-top: 3em;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    margin-bottom: 3em;
+    border-bottom: 0.1em solid #c0bfd2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.timer {
+    background-color: rgba(42, 222, 36, 0.6);
+    width: 6.5em;
+    border-radius: 1.8em;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em 0.9em;
+}
+
+#next-button:disabled {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.9);
+    pointer-events: none;
+}
+
+
+.option-div {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0;
+    text-align: center;
+    outline: none;
+    background: transparent;
+    border: 1px solid #e6ede8;
+    border-radius: 0.3em;
+}
+
+.option-div:hover {
+    background-color: #b6b7b8;
+}
+
+
+.option-div:disabled {
+    color: #272829;
+    cursor: not-allowed;
+}
+
+.incorrect {
+    background-color: #ffdde0;
+    color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+.correct {
+    background-color: #e7f6d5;
+    color: #689f38;
+    border-color: #689f38;
+}
+
+#user-score {
+    font-size: 22px;
+    color: #1d0707;
+    padding: 10px;
+}
+
+#user-score p {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+/*Footer Social Media Icons*/
+/*Targets Social media icons*/
+#social-networks {
+    text-align: center;
+    padding: 0px 0;
+    display: flex;
+    justify-content: space-evenly;
+    /*Displays icons in a line*/
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 30px;
+    color: #1d0707;
+    border-radius: 30px;
+    padding: 9px;
+    box-shadow: 0px 3px 8px #ffffff;
+}
+
+.facebook:hover {
+    background-color: #4267B2;
+    border-radius: 22px;
+    transform: translateY(-20px);
+}
+
+.twitter:hover {
+    background-color: #1DA1F2;
+    border-radius: 22px;
+    transform: translateY(-20px);
+}
+
+.youtube:hover {
+    background-color: #CD201F;
+    border-radius: 22px;
+    transform: translateY(-20px);
+}
+
+.instagram:hover {
+    background-color: #E1306C;
+    border-radius: 22px;
+    transform: translateY(-20px);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    #display-container {
+        margin-top: 0;
+    }
+}
