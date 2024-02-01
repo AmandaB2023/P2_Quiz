@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(185deg, #049E00, #8CFF20);
+    background: url("../images/gameimage.webp")no-repeat center center/cover;
 }
 
 /*Main*/
@@ -49,7 +50,9 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 30px;
 }
+
 
 /*Start Button*/
 #start-button {
@@ -76,6 +79,7 @@ main {
     margin-top: 20px;
 }
 
+/*Start and Restart Buttons*/
 #start-button:hover,
 #restart:hover {
     background-color: #2ade24;
@@ -99,6 +103,7 @@ main {
     left: 50%;
 }
 
+/*Information Box Active*/
 .info-box.active {
     opacity: 1;
     z-index: 5;
@@ -106,11 +111,13 @@ main {
     transform: translate(-50%, -50%) scale(1);
 }
 
+/*Information Box Title*/
 .info-box .info-title {
     font-size: 50px;
     color: #049E00;
 }
 
+/*Information Box Text*/
 .info-box .info {
     display: inline-block;
     font-size: 16px;
@@ -118,11 +125,13 @@ main {
     margin: 4px 0;
 }
 
+/*Information Box 15 seconds tect*/
 .info-box .info>span {
     font-weight: 600;
     color: #049E00;
 }
 
+/*Information Box Buttons*/
 .info-box .info-buttons {
     display: flex;
     justify-content: space-between;
@@ -148,7 +157,7 @@ main {
 }
 
 
-
+/*All Buttons*/
 button {
     border: none;
     outline: none;
@@ -163,14 +172,14 @@ button {
     margin-top: 2px;
 }
 
-
+/*Information box buttons hover*/
 .info-box .info-buttons .info-btn:hover {
     background-color: #2ade24;
     color: #ffffff;
     border-radius: 10px;
 }
 
-
+/*Quiz display container*/
 #display-container {
     background-color: rgba(255, 255, 255, 0.6);
     padding: .5em 2em;
@@ -187,6 +196,7 @@ button {
 
 }
 
+/*Question Arear*/
 .question {
     margin-bottom: 1em;
     margin-top: 3em;
@@ -195,6 +205,7 @@ button {
     text-align: center;
 }
 
+/*Head of display container*/
 .header {
     position: absolute;
     margin-bottom: 3em;
@@ -209,6 +220,7 @@ button {
     z-index: 100;
 }
 
+/*Timer*/
 .timer {
     background-color: rgba(42, 222, 36, 0.6);
     width: 6.5em;
@@ -219,13 +231,27 @@ button {
     padding: 0.3em 0.9em;
 }
 
+/*Next Button*/
+#next-button {
+    font-size: 18px;
+    align-items: center;
+    margin-top: .5em;
+    background-color: #049E00;
+    color: #ffffff;
+    padding: 0.7em 1.8em;
+    border-radius: 0.3em;
+    float: right;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/*Next Button disabled*/
 #next-button:disabled {
     background-color: rgba(255, 255, 255, 0.6);
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(147, 145, 145, 0.9);
     pointer-events: none;
 }
 
-
+/*Answer options*/
 .option-div {
     font-size: 18px;
     width: 100%;
@@ -238,40 +264,61 @@ button {
     border-radius: 0.3em;
 }
 
+/*Answer options hover*/
 .option-div:hover {
     background-color: #b6b7b8;
 }
 
-
+/*Answer options disabled*/
 .option-div:disabled {
     color: #272829;
     cursor: not-allowed;
 }
 
+/*Answer options incorrect*/
 .incorrect {
     background-color: #ffdde0;
     color: #d32f2f;
     border-color: #d32f2f;
 }
 
+/*Answer options correct*/
 .correct {
     background-color: #e7f6d5;
     color: #689f38;
     border-color: #689f38;
 }
 
+/*User score area*/
 #user-score {
     font-size: 22px;
     color: #1d0707;
     padding: 10px;
 }
 
+/*User score text*/
 #user-score p {
     padding: 20px;
     align-items: center;
     justify-content: center;
 }
 
+#currentYear {
+    margin-left: 50%;
+    margin-bottom: 2px;
+}
+
+#error-text {
+    width: 75%;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Hide elements*/
 .hide {
     display: none;
 }
@@ -288,8 +335,8 @@ button {
 }
 
 #social-networks i {
-    font-size: 30px;
-    color: #1d0707;
+    font-size: 25px;
+    color: #0c0c0c;
     border-radius: 30px;
     padding: 9px;
     box-shadow: 0px 3px 8px #ffffff;

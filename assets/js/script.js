@@ -14,6 +14,7 @@ let timeLeft = document.querySelector(".time-left");
 let showNextQuestion = document.querySelector(".next-question");
 let countOfQuestion = document.querySelector(".number-of-question");
 let resultImage = document.getElementById("result-image")
+let currentYear = new Date().getFullYear();
 let questionCount;
 let scoreCount = 0;
 let count = 11;
@@ -35,14 +36,16 @@ function showResult() {
     console.log('result')
     //user score
     userScore.innerHTML = "Your score is " + scoreCount + " out of " + questionCount;
-    if (scoreCount === 0 && scoreCount <= 2) {
-        userScore.innerHTML += "<p>Not Good</p>";
+    if (scoreCount === 1 && scoreCount <= 2) {
+        userScore.innerHTML += "<p>Oh No !! Try Again</p>";
     } else if (scoreCount === 3 && scoreCount <= 5) {
-        userScore.innerHTML += "<p>I think you need practice</p>";
+        userScore.innerHTML += "<p>I think you need practice!!</p>";
     } else if (scoreCount === 6 && scoreCount <= 8) {
-        userScore.innerHTML += "<p>I think you need more practice</p>";
+        userScore.innerHTML += "<p>No Bad</p>";
+    } else if (scoreCount === 9 && scoreCount <= 10) {
+        userScore.innerHTML += "<p>Excellent !! You re a irish as The Late Late Show</p>";
     } else {
-        userScore.innerHTML += "<p>Excellent</p>";
+        userScore.innerHTML += "<p>Oh no </p>";
     }
 }
 //Next Button
@@ -206,3 +209,8 @@ window.onload = () => {
     startScreen.classList.remove("hide");
     displayContainer.classList.add("hide");
 };
+
+//Current Year
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('currentYear').textContent = currentYear;
+});
