@@ -239,7 +239,7 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 Tools
 *   Canva was used to create the logo and to resize the images where needed.[Canva](https://www.canva.com)
 *   Snipping Tool was used to take pictures of my screen for testing.
-*   Freeconvert was used to convert my images from jpg or png to webp.![Link](https://www.freeconvert.com/)
+*   Freeconvert was used to convert my images from jpg or png to webp.[Link](https://www.freeconvert.com/)
 
 ## Acknowledgments
 

@@ -1,4 +1,4 @@
-#Testing
+#   Testing
 
 ![Am_i_responsive](documentation/am-i-responsive.webp)
 
@@ -63,12 +63,18 @@ The website was also checked using the responsive viewer extention on google chr
  All the HTML and CSS code  has been run through The W3C HTML Markup Validation Service and the The W3C CSS Markup Validation Service to test the code for any errors. No errors were found.
 
 *   HTML Validation
+
+
  ![HTML_Validation](documentation/html-check.webp)
 
- *  CSS VAlidation
+ *  CSS Validation
+
+
  ![CSS_Validation](documentation/css-check.webp)
 
 ## Lighthouse Report
+
+
 ![Lighthouse_report](documentation/lighthouse-report.webp)
 
 ##  Bugs
