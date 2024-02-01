@@ -41,10 +41,10 @@ function showResult() {
         userScore.innerHTML += "<p>I think you need practice!!</p>";
     } else if (scoreCount === 6 && scoreCount <= 8) {
         userScore.innerHTML += "<p>Not Bad</p>";
-    } else if (scoreCount === 9 && scoreCount <= 10) {
+    } else
         userScore.innerHTML += "<p>Excellent !! You are as irish as The Late Late Show</p>";
-    }
 }
+
 //Next Button
 nextBtn.addEventListener(
     "click",
