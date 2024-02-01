@@ -1,4 +1,9 @@
 ![logo](documentation/logo_quiz.webp)
+# How Irish Are You
+
+Is a multiple-choice Irish-themed trivia quiz about all things Ireland.
+
+Link to live site: [How Irish Are You](https://amandab2023.github.io/P2_Quiz/)
 
 ## Contents
 *   User Experience
@@ -95,33 +100,49 @@ The website consists of one main page, index.html where the entire quiz game wil
 ### Favicon
 A favicon will be displayed in the page tab, this is an icon that is related to the theme of the quiz.
 
+![Favicon](documentation/favicon-quiz.png)
+
 ### Header
 
 The header which includes the name of the quiz and its logo is fixed to improve user experience. This will be displayed throughout the game.
+
+![Header](documentation/quiz-header.webp)
 
 ### Main Section
 
 *  This is the quiz area where all the game happens.
     *   When the user logs onto the website they are presented with a start button.
-    *   When the user clicks the start button they are then presented with a popup information box about how to play the game. They are also presented with two buttons:
+
+![Start](documentation/quiz-start.webp
+)
+
+*   When the user clicks the start button they are then presented with a popup information box about how to play the game. They are also presented with two buttons:
         *   Exit - which will exit the game and return the user to the main start screen when clicked, and 
         *   Play - which will bring the user to the main quiz when clicked. If play is not clicked then the quiz cannot begin.
 
-    *   When the user clicks Play the main game area is shown which consists of a timer, a question counter from one to ten, the question display area and four answer options.
+![Information_Box](documentation/info-popup.webp)
 
-        *   The timer counts down from 10 seconds.
-        *   The answer options change color on hover.
-        *   Both the questions and answers will be displayed randomly.
-        *   The question counter increases on each question answered until it reaches 10 questions.
-        *   When the user selects an answer it will turn green if correct or red if incorrect.
-        *   If user selects the incorrect answer then the correct answer will also be shown.
-        *   After selecting an answer the user will then click the next button to move to the next question.   
+*   When the user clicks Play the main game area is shown which consists of a timer, a question counter from one to ten, the question display area and four answer options.
 
-*  Once the user has answered 10 questions their result will be shown with a message and image, which will vary depending on the user's score.
+![Quiz](documentation/quiz-popup.webp)
+
+*   The timer counts down from 10 seconds.
+*   The answer options change color on hover.
+*   Both the questions and answers will be displayed randomly.
+*    The question counter increases on each question answered until it reaches 10 questions.
+*   When the user selects an answer it will turn green if correct or red if incorrect.
+
+![Correct](documentation/quiz-incorrect.webp)
+
+*   If user selects the incorrect answer then the correct answer will also be shown.
+*   After selecting an answer the user will then click the next button to move to the next question.   
+*   Once the user has answered 10 questions their result will be shown with a message and image, which will vary depending on the user's score.
+
+![Result](documentation/quiz-result.webp)
 
 ###  Footer
 *   The footer contains social media links, and the current year.
-
+![Footer](documentation/quiz-footerJPG.webp)
 ## Technologies Used
 
 *   HTML was used as the foundation of the site.
@@ -140,16 +161,26 @@ The header which includes the name of the quiz and its logo is fixed to improve 
 *   W3C CSS Validation [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
 *   W3C Markup Validation [W3C Markup Validation](https://validator.w3.org/)
 
+##  404 Page
+![404](documentation/404.webp)
 ## Design
 
 ### Color Scheme
-The color scheme was my idea and I took inspiration from the Irish colors being green, white and gold.I also focused n on using the Leaprucan image to make the quiz fun as they are distinctively Irish symbols.
+The color scheme was my idea and I took inspiration from the Irish colors being green, white and gold. I also focused n on using the Leaprucan image to make the quiz fun as they are distinctively Irish symbols.
+
+![Colors](documentation/colors.png)
 
 ### Typography
+I used Irish Glover for the font type as I thought it was a very suitable choice given the theme of my quiz.
+
+![Font](documentation/quiz_font.webp)
+
 
 ## Wireframes
 
 The wireframes for the website were designed using Balsamiq. The designs vary from the end layout in some places due to creative decisions made throughout the development process.
+
+![Wireframe](documentation/Wireframe.png)
 
 ## Testing
 
@@ -165,7 +196,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 *   From the source section drop-down menu, select the Main Branch, then click "Save".
 *   The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here:![Link]
+The live link can be found here: ![Link]
 
 #### Local Deployment
 In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository.
@@ -184,6 +215,8 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 
 7. Then code . to open VS Studio using Windows.
 
+![Github](documentation/github_image.JPG)
+
 ## Future Improvements
 
 *  I would like to add a leaderboard.
@@ -197,22 +230,29 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 *   I got the colors for the social media icons from [Us Brand Colors](https://usbrandcolors.com/instagram-colors/)
 *   Fonts were imported from Google Fonts.
 *   Icons were imported from Font Awesome.
-*   The Code Institute Love Maths project for the basic javascript structure and quiz container display.
+*   The Code Institute Love Maths project for the basic Javascript structure and quiz container display.
 
 #### Media
-*   The logo I created myself using Canva.[Canva](https://www.canva.com
-*   All images used where from Canva.[Canva](https://www.canva.com
+*   The logo I created myself using Canva. [Canva](https://www.canva.com)
+*   All images used are from Canva. [Canva](https://www.canva.com)
 
 Tools
 *   Canva was used to create the logo and to resize the images where needed.[Canva](https://www.canva.com)
 *   Snipping Tool was used to take pictures of my screen for testing.
-*   Freeconvert was used to convert my images from jpg or png to webp.
-
+*   Freeconvert was used to convert my images from jpg or png to webp.![Link](https://www.freeconvert.com/)
 
 ## Acknowledgments
 
-*   First and foremost my mentor Juliia Konovalova for all her advice and guidance on this project. She was very helpful when I was struggling to understand certain javascript aspects.
+*   First and foremost my mentor Juliia Konovalova for all her advice and guidance on this project. She was very helpful when I was struggling to understand certain Javascript aspects.
 
 *   Code Institute tutors and Slack community members for their support and help.
+
+*   CodeVal on youTube ![Link](https://www.youtube.com/watch?v=PNRsd2CD4S8)
+
+*   Web Dev Simplified on youtube ![Link](https://www.youtube.com/watch?v=riDzcEQbX6k)
+
+*   CodeHal on youTube ![Link](https://www.youtube.com/watch?v=Vp8x8-reqZA&t=4761s)
+
+*   W3Schools ![Link](https://www.w3schools.com/js/js_examples.asp)
 
 
