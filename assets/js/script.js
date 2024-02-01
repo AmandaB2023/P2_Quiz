@@ -36,7 +36,7 @@ function showResult() {
     //user score
     userScore.innerHTML = "Your score is " + scoreCount + " out of " + questionCount;
     if (scoreCount === 0 && scoreCount <= 2) {
-        userScore.innerHTML += "<p>Oh No !! Try Again</p>";
+        userScore.innerHTML += "<p>Oh No!!Try Again</p>";
     } else if (scoreCount === 3 && scoreCount <= 5) {
         userScore.innerHTML += "<p>I think you need practice!!</p>";
     } else if (scoreCount === 6 && scoreCount <= 8) {
