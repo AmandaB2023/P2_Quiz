@@ -1,3 +1,4 @@
+/* jshint esversion: 8 */
 //Quiz Questions and Options array
 
 const questionsArray = [{

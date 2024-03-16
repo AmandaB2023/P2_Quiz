@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 //Selecting required elements
 const quizContainer = document.getElementById("quiz-container");
 const nextBtn = document.getElementById("next-button");
