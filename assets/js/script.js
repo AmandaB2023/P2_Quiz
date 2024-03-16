@@ -11,9 +11,7 @@ const infoBox = document.querySelector(".info-box");
 const exitBtn = infoBox.querySelector(".info-buttons .exit-btn");
 const playBtn = infoBox.querySelector(".info-buttons .play-btn");
 let timeLeft = document.querySelector(".time-left");
-let showNextQuestion = document.querySelector(".next-question");
 let countOfQuestion = document.querySelector(".number-of-question");
-let resultImage = document.getElementById("result-image")
 let currentYear = new Date().getFullYear();
 let questionCount;
 let scoreCount = 0;
@@ -35,40 +33,38 @@ restart.addEventListener("click", () => {
 function showResult() {
     //user score
     userScore.innerHTML = "Your score is " + scoreCount + " out of " + questionCount;
-    if (scoreCount === 0 && scoreCount <= 4) {
+    if (scoreCount === 0 && scoreCount <= 3) {
         userScore.innerHTML += "<p>I think you need practice!!</p>";
     } else if (scoreCount === 4 && scoreCount <= 8) {
-        userScore.innerHTML += "<p>I think you need practice!!</p>";
+        userScore.innerHTML += "<p>Not Bad!</p>";
     } else if (scoreCount === 8 && scoreCount <= 10) {
-        userScore.innerHTML += "<p>Excellent !! You are as irish as The Late Late Show</p>";
-    } else
-        userScore.innerHTML += "";
+        userScore.innerHTML += "<p> Excellent !! You are as Irish as The Late Late Show</p>";
+    }
 }
 
 //Next Button
-nextBtn.addEventListener(
-    "click",
-    (displayNext = () => {
-        //increment questionCount
-        questionCount++;
-        //if last question
-        if (questionCount == questionsArray.length) {
-            //hide question container and display score
-            displayContainer.classList.add("hide");
-            scoreContainer.classList.remove("hide");
-            showResult()
-        } else {
-            //display questionCount
-            countOfQuestion.innerHTML =
-                questionCount + 1 + " of " + questionsArray.length + " Question";
-            //display quiz
-            quizDisplay(questionCount);
-            count = 11;
-            clearInterval(countdown);
-            timerDisplay();
-        }
+const displayNext = () => {
+    //increment questionCount
+    questionCount++;
+    //if last question
+    if (questionCount == questionsArray.length) {
+        //hide question container and display score
+        displayContainer.classList.add("hide");
+        scoreContainer.classList.remove("hide");
+        showResult()
+    } else {
+        //display questionCount
+        countOfQuestion.innerHTML =
+            questionCount + 1 + " of " + questionsArray.length + " Question";
+        //display quiz
+        quizDisplay(questionCount);
+        count = 11;
+        clearInterval(countdown);
+        timerDisplay();
+    }
 
-    }));
+};
+nextBtn.addEventListener("click", displayNext);
 
 // Timer
 const timerDisplay = () => {
@@ -167,7 +163,7 @@ function startGame() {
     count = 11;
     showQuestion();
     quizDisplay(questionCount);
-    timerDisplay()
+    timerDisplay();
 }
 
 // Play Button on Information Box popup, on click brings up quiz container. 
@@ -179,19 +175,19 @@ playBtn.onclick = () => {
     startScreen.classList.add("hide");
     displayContainer.classList.remove("hide");
     startGame();
-}
+};
 
 // Exit button on Information box popup, on click exits.
 exitBtn.onclick = () => {
     //Wll hide rules.
     infoBox.classList.remove("active");
 
-}
+};
 //Start Button on click brings up quiz playing information.
 startButton.onclick = () => {
     //Shows information  box
     infoBox.classList.add("active");
-}
+};
 //Hide quiz and display start screen.
 window.onload = () => {
     startScreen.classList.remove("hide");

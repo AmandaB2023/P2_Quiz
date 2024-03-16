@@ -306,6 +306,8 @@ button {
 #currentYear {
     margin-left: 50%;
     margin-bottom: 2px;
+    font-size: 25px;
+    color: #0c0c0c;
 }
 
 #error-text {
@@ -345,25 +347,22 @@ button {
 .facebook:hover {
     background-color: #4267B2;
     border-radius: 22px;
-    transform: translateY(-20px);
 }
 
 .twitter:hover {
     background-color: #1DA1F2;
     border-radius: 22px;
-    transform: translateY(-20px);
 }
 
 .youtube:hover {
     background-color: #CD201F;
     border-radius: 22px;
-    transform: translateY(-20px);
+
 }
 
 .instagram:hover {
     background-color: #E1306C;
     border-radius: 22px;
-    transform: translateY(-20px);
 }
 
 @media screen and (max-width: 600px) {
