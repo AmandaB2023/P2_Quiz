@@ -72,6 +72,21 @@ The website was also checked using the responsive viewer extention on google chr
 
  ![CSS_Validation](documentation/css-check.webp)
 
+ *  JSHint Validation
+
+    *   I checked my JavaScript code using JSHint and had three issues:
+    *    one was that questionsArray was undefined , however this is defined in a seperate file called questions.py.
+    *   Two was that checkAnswer is an unused variable , however checkAnswer is used in the function checkAnswer which checks if the user selected answer is correct or incorrect. 
+    *   Three was in my questions.js file where JSHint said questionsArray was an unsued varaiabe  again this was used in another file called script.js
+
+*   script.js
+
+ ![JShint](documentation/P2_JShint.JPG)
+
+*   questions.js
+
+ ![JShint Questions](documentation/P2_JShint2.JPG)
+
 ## Lighthouse Report
 
 
@@ -79,7 +94,7 @@ The website was also checked using the responsive viewer extention on google chr
 
 ##  Bugs
 
-*   I did have an issure getting my timer to move to the next question when the 10 second had elapsed.
+*   I did have an issue getting my timer to move to the next question when the 10 second had elapsed.
 
 *   I also had an issue getting my questions to show up in the quiz display box.
 

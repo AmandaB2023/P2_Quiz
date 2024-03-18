@@ -20,6 +20,7 @@ let scoreCount = 0;
 let count = 11;
 let countdown;
 
+
 // creating the new div tags for icons
 const tickIcon = '<div class="icon-tick"><i class="fa-regular fa-circle-check"></i></div>';
 const crossIcon = '<div class="icon-cross"><i class="fa-regular fa-circle-xmark"></i></div>';
@@ -53,7 +54,7 @@ const displayNext = () => {
         //hide question container and display score
         displayContainer.classList.add("hide");
         scoreContainer.classList.remove("hide");
-        showResult()
+        showResult();
     } else {
         //display questionCount
         countOfQuestion.innerHTML =
@@ -75,7 +76,7 @@ const timerDisplay = () => {
         timeLeft.innerHTML = `${count}s`;
         if (count == 0) {
             //when countdown reaches 0 clearInterval and go to next question
-            clearInterval(countdown)
+            clearInterval(countdown);
             displayNext();
         }
     }, 1000);
@@ -93,32 +94,31 @@ const quizDisplay = (questionCount) => {
     nextBtn.disabled = true;
 };
 
+
 function showQuestion() {
     //Generate quiz
     for (let i of questionsArray) {
-        //Randomly sort answer options
-        i.options.sort(() => Math.random() - 0.5);
         //Quiz card creation
         let div = document.createElement("div");
         div.classList.add("quiz-container-mid", "hide");
-        //Quiz question number
+        // //Quiz question number
         countOfQuestion.innerHTML = 1 + " of " + questionsArray.length + " Question";
-        //Quiz question
+        // //Quiz question
         let question_DIV = document.createElement("p");
         question_DIV.classList.add("question");
         question_DIV.innerHTML = i.question;
         div.appendChild(question_DIV);
+
         //Answer options
         div.innerHTML += `
     <button class="option-div" onclick=" checkAnswer(this)">${i.options[0]}</button>
-     <button class="option-div" onclick=" checkAnswer(this)">${i.options[1]}</button>
-      <button class="option-div" onclick=" checkAnswer(this)">${i.options[2]}</button>
-       <button class="option-div" onclick=" checkAnswer(this)">${i.options[3]}</button>
+    <button class="option-div" onclick=" checkAnswer(this)">${i.options[1]}</button>
+    <button class="option-div" onclick=" checkAnswer(this)">${i.options[2]}</button>
+    <button class="option-div" onclick=" checkAnswer(this)">${i.options[3]}</button>
     `;
         quizContainer.appendChild(div);
     }
 }
-
 
 //Check answer function to check if user selected answer option is correct or incorrect.
 function checkAnswer(userAnswer) {

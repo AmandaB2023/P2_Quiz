@@ -154,12 +154,13 @@ The header which includes the name of the quiz and its logo is fixed to improve 
 *   Git was used for the version control of the website.
 *   GitHub was used to host the code of the website.
 *   Github Pages was used to deploy the website,
-*   Canva was used to create the logo, backgroung image and to resize images.
+*   Canva was used to create the logo, background image and to resize images.
 *   Google Fonts was used to import fonts for use on the website.
 *   Font Awesome was used to add icons to the website.
 *   Chrome screen recorder plugin was used to create gifs.
 *   W3C CSS Validation [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
 *   W3C Markup Validation [W3C Markup Validation](https://validator.w3.org/)
+*   JSHint to validate my javascript code [JSHint](https://jshint.com/)
 
 ##  404 Page
 ![404](documentation/404.webp)
@@ -184,7 +185,7 @@ The wireframes for the website were designed using Balsamiq. The designs vary fr
 
 ## Testing
 
-Please refer to the ![Link](TESTING.md) file for all test-related documentation.
+Please refer to the [Testing](TESTING.md) file for all test-related documentation.
 
 
 ## Deployment
@@ -196,7 +197,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 *   From the source section drop-down menu, select the Main Branch, then click "Save".
 *   The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here: ![Github](https://amandab2023.github.io/P2_Quiz/)
+The live link can be found here: [Github](https://amandab2023.github.io/P2_Quiz/)
 
 #### Local Deployment
 In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository.
@@ -233,8 +234,8 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 *   The Code Institute Love Maths project for the basic Javascript structure and quiz container display.
 
 #### Media
-*   The logo I created myself using Canva. [Canva](https://www.canva.com)
-*   All images used are from Canva. [Canva](https://www.canva.com)
+*   The logo I created myself using [Canva](https://www.canva.com)
+*   All images used are from [Canva](https://www.canva.com)
 
 Tools
 *   Canva was used to create the logo and to resize the images where needed.[Canva](https://www.canva.com)
