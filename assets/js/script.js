@@ -36,14 +36,17 @@ restart.addEventListener("click", () => {
 function showResult() {
     //user score
     userScore.innerHTML = "Your score is " + scoreCount + " out of " + questionCount;
-    if (scoreCount === 0 && scoreCount <= 3) {
+    if (scoreCount >= 0 && scoreCount <= 3) {
         userScore.innerHTML += "<p>I think you need practice!!</p>";
-    } else if (scoreCount === 4 && scoreCount <= 8) {
+    } else if (scoreCount >= 3 && scoreCount <= 6) {
+        userScore.innerHTML += "<p> You can do better!</p>";
+    } else if (scoreCount >= 7 && scoreCount <= 8) {
         userScore.innerHTML += "<p>Not Bad!</p>";
-    } else if (scoreCount === 8 && scoreCount <= 10) {
+    } else if (scoreCount >= 9 && scoreCount <= 10) {
         userScore.innerHTML += "<p> Excellent !! You are as Irish as The Late Late Show</p>";
     }
 }
+
 
 //Next Button
 const displayNext = () => {
